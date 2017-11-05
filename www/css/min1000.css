@@ -34,12 +34,6 @@
 img {
   vertical-align: middle; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-html, body {
-  height: 100%; }
-
 *::-moz-selection {
   background-color: inherit;
   color: inherit; }
@@ -48,30 +42,28 @@ html, body {
   background-color: inherit;
   color: inherit; }
 
-.clear {
-  height: 0;
-  clear: both; }
-
-.pd {
-  cursor: default; }
-
 .fa {
   font-family: FontAwesome; }
+
+#up {
+  position: fixed;
+  display: none;
+  width: 80px;
+  height: 80px;
+  right: 50px;
+  bottom: 50px;
+  border-radius: 50%;
+  background: rgba(129, 150, 166, 0.4);
+  z-index: 10;
+  font-size: 70px;
+  text-align: center;
+  color: #fff; }
 
 .withBack {
   min-height: 100vh;
   background-position: 80% 40%;
   background-size: cover;
   color: #fff; }
-  .withBack h1, .withBack h2 {
-    max-width: 600px;
-    top: 44vh;
-    left: 50%;
-    margin-left: -600px;
-    font: 60px/1.7 OpenSans-Light; }
-  .withBack h2 {
-    padding-bottom: 30px;
-    line-height: 1.2; }
   .withBack p {
     max-width: 450px;
     top: 44vh;
@@ -87,13 +79,30 @@ html, body {
   max-width: 1200px;
   left: 50%;
   margin-left: -600px; }
-  .textPage > div h3 {
-    width: 100%;
-    font: 35px/1.5 OpenSans-Light; }
   .textPage > div p {
     font: 14px/1.7 OpenSans-Regular; }
-  .textPage > div h4 {
-    font: 30px/1.5 OpenSans-Light; }
+
+h1, h2 {
+  max-width: 600px;
+  top: 44vh;
+  left: 50%;
+  margin-left: -600px;
+  font: 60px/1.7 OpenSans-Light; }
+
+h2 {
+  padding-bottom: 30px;
+  line-height: 1.2; }
+
+h3 {
+  width: 100%;
+  font: 35px/1.5 OpenSans-Light; }
+
+h4 {
+  font: 30px/1.5 OpenSans-Light; }
+
+h5 {
+  font: 13px/1.7 OpenSans-Semibold;
+  padding-bottom: 20px; }
 
 #page1 {
   background-image: url("../images/back1.jpg"); }
@@ -106,11 +115,12 @@ html, body {
     position: absolute;
     width: 160px;
     top: 53vh;
-    left: -20px;
+    right: -40px;
     display: block;
     font: 12px/2 OpenSans-Semibold;
     text-transform: uppercase;
-    transform: rotate(-90deg); }
+    transform: rotate(-90deg);
+    z-index: 10; }
     #page1 a span {
       font-family: OpenSans-Light, sans-serif; }
 
@@ -136,7 +146,7 @@ html, body {
       right: 0;
       bottom: 0; }
   #page2 > div:nth-child(2) div {
-    width: 33.3%;
+    width: 33.333%;
     height: 280px;
     padding: 40px;
     background-size: cover;
@@ -158,11 +168,11 @@ html, body {
       overflow: hidden;
       font: 13px/1.7 OpenSans-Regular; }
   #page2 > div:nth-child(2) div:first-child {
-    background: #F4979C url("../images/smallBack3.jpg") no-repeat -280px -280px; }
+    background: #F4979C url("../images/smallBack1.jpg") no-repeat -280px -280px; }
     #page2 > div:nth-child(2) div:first-child:hover {
       background-position: 0 0; }
   #page2 > div:nth-child(2) div:nth-child(2) {
-    background: #605E7C url("../images/smallBack3.jpg") no-repeat 0 -280px; }
+    background: #605E7C url("../images/smallBack2.jpg") no-repeat 0 -280px; }
     #page2 > div:nth-child(2) div:nth-child(2):hover {
       background-position: 0 0; }
   #page2 > div:nth-child(2) div:nth-child(3) {
@@ -175,9 +185,9 @@ html, body {
     #page2 > div:nth-child(2) div:nth-child(4):hover {
       background-position: -560px 280px; }
   #page2 > div:nth-child(2) div:last-child {
-    background: #81C99C url("../images/smallBack3.jpg") no-repeat 0 0; }
+    background: #81C99C url("../images/smallBack5.jpg") no-repeat 280px 280px; }
     #page2 > div:nth-child(2) div:last-child:hover {
-      background-position: 280px 280px; }
+      background-position: 0 0; }
   #page2 > div:last-child {
     padding: 100px 0; }
     #page2 > div:last-child p {
@@ -239,5 +249,64 @@ html, body {
         background-color: #fff; }
         #page5 > div div:hover span:first-of-type {
           background-color: #BD8CBE; }
+
+footer {
+  background-color: #182330;
+  color: #fff; }
+  footer > div {
+    padding: 120px 0 140px; }
+    footer > div div:first-child {
+      width: 50%; }
+      footer > div div:first-child p {
+        padding-bottom: 60px;
+        font: 13px/1.7 OpenSans-Regular; }
+      footer > div div:first-child menu {
+        display: inline-block;
+        width: 30%; }
+        footer > div div:first-child menu a {
+          display: block;
+          font: 13px/1.9 OpenSans-Regular;
+          margin-right: 40px; }
+    footer > div div:last-child {
+      width: 40%; }
+      footer > div div:last-child span {
+        font: 12px/1.5 OpenSans-Regular;
+        color: #56687E; }
+
+form {
+  width: 100%;
+  padding-bottom: 15px; }
+  form input[type="search"] {
+    width: 100%;
+    height: 60px;
+    padding: 0 70px 0 20px;
+    border-radius: 3px;
+    font: 18px/1 OpenSans-Regular;
+    color: #000; }
+  form input[type="submit"] {
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    top: 0;
+    right: 0;
+    background-color: #82CB9D;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer; }
+  form img {
+    position: absolute;
+    top: 20px;
+    right: 20px; }
+
+@media only all and (max-width: 1240px) {
+  .withBack p, h1, h2, #page1 img, #page3 a {
+    left: 20px;
+    margin-left: 0; }
+
+  .textPage > div {
+    left: 0;
+    margin-left: 0;
+    padding-left: 20px !important;
+    padding-right: 20px !important; } }
 
 /*# sourceMappingURL=min1000.css.map */
