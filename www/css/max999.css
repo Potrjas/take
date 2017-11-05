@@ -13,6 +13,9 @@
 @font-face {
   font-family: OpenSans-Semibold;
   src: url(../fonts/OpenSans-Semibold.ttf); }
+@font-face {
+  font-family: OpenSans-Extrabold;
+  src: url(../fonts/OpenSans-Extrabold.ttf); }
 * {
   position: relative;
   margin: 0;

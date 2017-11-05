@@ -13,6 +13,9 @@
 @font-face {
   font-family: OpenSans-Semibold;
   src: url(../fonts/OpenSans-Semibold.ttf); }
+@font-face {
+  font-family: OpenSans-Extrabold;
+  src: url(../fonts/OpenSans-Extrabold.ttf); }
 * {
   position: relative;
   margin: 0;
@@ -60,11 +63,15 @@ html, body {
   background-position: 80% 40%;
   background-size: cover;
   color: #fff; }
-  .withBack h2 {
+  .withBack h1, .withBack h2 {
+    max-width: 600px;
     top: 44vh;
     left: 50%;
     margin-left: -600px;
     font: 60px/1.7 OpenSans-Light; }
+  .withBack h2 {
+    padding-bottom: 30px;
+    line-height: 1.2; }
   .withBack p {
     max-width: 450px;
     top: 44vh;
@@ -181,5 +188,56 @@ html, body {
       padding: 50px 0 20px;
       font: 13px/1 OpenSans-Semibold;
       color: #66676C; }
+
+#page4 {
+  padding: 100px 0 140px;
+  background-color: #82CB9D;
+  color: #fff; }
+  #page4 p {
+    width: 31%; }
+  #page4 span {
+    display: block;
+    padding: 50px 0 20px;
+    font: 13px/1 OpenSans-Semibold; }
+
+#page5 {
+  background-color: #F5F6F9; }
+  #page5 > div {
+    padding: 100px 0; }
+    #page5 > div div {
+      width: 46%;
+      padding: 50px; }
+      #page5 > div div span:first-of-type {
+        padding: 5px 14px;
+        border-radius: 4px;
+        background-color: #E0E0E0;
+        font: 11px/2 OpenSans-Extrabold;
+        color: #fff;
+        text-transform: uppercase; }
+      #page5 > div div h4 {
+        padding: 14px 0; }
+      #page5 > div div span:nth-of-type(2) {
+        display: block;
+        height: 75px;
+        margin-bottom: 30px;
+        font: 14px/1.7 OpenSans-Regular;
+        color: #8196A6; }
+      #page5 > div div a {
+        padding: 13px 30px;
+        border-radius: 3px;
+        background-color: #81C99C;
+        font: 13px/2 OpenSans-Bold;
+        color: #fff;
+        text-transform: uppercase; }
+      #page5 > div div span:last-of-type {
+        display: block;
+        margin-top: 30px;
+        font-size: 25px;
+        color: #C4C4C4; }
+      #page5 > div div:hover {
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+        background-color: #fff; }
+        #page5 > div div:hover span:first-of-type {
+          background-color: #BD8CBE; }
 
 /*# sourceMappingURL=min1000.css.map */
