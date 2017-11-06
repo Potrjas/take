@@ -1,1 +1,211 @@
 @import "joint"
+
+$pFont: 15px/1.5 OpenSans-Regular
+
+#up
+	position: fixed
+	display: none
+	width: 60px
+	height: 60px
+	right: 20px
+	bottom: 20px
+	border-radius: 50%
+	background: rgba(129,150,166,0.4)
+	z-index: 10
+	font-size: 53px
+	text-align: center
+	color: #fff
+
+.withBack
+	min-height: 540px
+	height: 100vh
+	padding: 20px
+	background-position: 50% 50%
+	background-size: cover
+	color: #fff
+	p
+		max-width: 450px
+		top: 120px
+
+.textPage
+	padding: 60px 20px
+
+h1, h2
+	max-width: 600px
+	top: 100px
+	font: 42px/1.2 OpenSans-Light
+
+h3
+	width: 100%
+	font: 32px/1.2 OpenSans-Light
+
+h4
+	font: 30px/1.2 OpenSans-Light
+
+h5
+	padding: 30px 0 20px
+	font: 15px/1.2 OpenSans-Semibold
+
+p
+	font: $pFont
+
+#page1
+	background-image: url("../images/back1.jpg")
+	a
+		position: absolute
+		width: 160px
+		top: 70px
+		right: -40px
+		display: block
+		font: 12px/2 OpenSans-Semibold
+		text-transform: uppercase
+		//-webkit-transform: rotate(-90deg)
+		//-moz-transform: rotate(-90deg)
+		//-o-transform: rotate(-90deg)
+		//-ms-transform: rotate(-90deg)
+		transform: rotate(-90deg)
+		z-index: 10
+		span
+			font-family: OpenSans-Light, sans-serif
+
+#page3
+	background-image: url("../images/back3.jpg")
+	a
+		top: 115px
+		font: 14px/4 OpenSans-Bold
+
+#page2
+	background-color: #fff
+	> div:first-child
+		p
+			padding: 14px 0
+			color: #959595
+			&:nth-child(3)
+				display: none
+	> div:nth-child(2)
+		padding: 40px 0
+		div
+			height: 280px
+			padding: 30px
+			background-position: center center
+			background-size: cover !important
+			color: #fff
+			a
+				display: block
+				font: 14px/2 OpenSans-Bold
+				span:last-child
+					position: absolute
+					top: 10px
+					right: 10px
+					font-size: 20px
+			> span
+				display: block
+				height: 110px
+				max-width: 440px
+				margin-top: 10px
+				overflow: hidden
+				font: 13px/1.7 OpenSans-Regular
+		div:first-child
+			background-color: #F4979C
+		div:nth-child(2)
+			background-color: #605E7C
+		div:nth-child(3)
+			background-image: url("../images/smallBack3.jpg")
+		div:nth-child(4)
+			flex-grow: 2
+			background-image: url("../images/smallBack4.jpg")
+		div:last-child
+			background-color: #82CB9D
+	> div:last-child
+		p
+			color: #959595
+		span
+			display: block
+			padding: 20px 0 5px
+			font: 15px/1 OpenSans-Semibold
+			color: #66676C
+
+#page4
+	background-color: #82CB9D
+	color: #fff
+	span
+		display: block
+		padding: 20px 0 5px
+		font: 15px/1 OpenSans-Semibold
+
+#page5
+	background-color: #F5F6F9
+	> div
+		div
+			padding: 30px
+			margin-bottom: 20px
+			box-shadow: 0 0 6px rgba(0,0,0,0.1)
+			background-color: #fff
+			span:first-of-type
+				padding: 5px 14px
+				border-radius: 4px
+				background-color: #BD8CBE
+				font: 11px/2 OpenSans-Extrabold
+				color: #fff
+				text-transform: uppercase
+			h4
+				padding: 14px 0
+			span:nth-of-type(2)
+				display: block
+				margin-bottom: 30px
+				font: 15px/1.2 OpenSans-Regular
+				color: #8196A6
+			a
+				padding: 13px 30px
+				border-radius: 3px
+				background-color: #82CB9D
+				font: 13px/2 OpenSans-Bold
+				color: #fff
+				text-transform: uppercase
+			span:last-of-type
+				display: block
+				margin-top: 30px
+				font-size: 25px
+				color: #C4C4C4
+footer
+	padding-top: 30px
+	background-color: #182330
+	color: #fff
+	> div
+		div:first-child
+			p
+				padding-bottom: 20px
+			menu
+				text-align: center
+				a
+					display: inline-block
+					margin: 5px 20px
+					font: $pFont
+		div:last-child span
+			font: 12px/1.5 OpenSans-Regular
+			color: #56687E
+form
+	width: 100%
+	padding-bottom: 15px
+	input[type="search"]
+		width: 100%
+		height: 60px
+		padding: 0 70px 0 20px
+		border-radius: 3px
+		font: 18px/1 OpenSans-Regular
+		color: #000
+	input[type="submit"]
+		position: absolute
+		width: 70px
+		height: 60px
+		top: 0
+		right: 0
+		background-color: #82CB9D
+		border-top-right-radius: 3px
+		border-bottom-right-radius: 3px
+		cursor: pointer
+	img
+		position: absolute
+		top: 20px
+		right: 20px
+		cursor: pointer

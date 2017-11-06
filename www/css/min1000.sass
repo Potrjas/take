@@ -4,11 +4,6 @@
 	left: 50%
 	margin-left: -600px
 
-@mixin background
-	background-position: 80% 40%
-	background-size: cover
-	color: #fff
-
 #up
 	position: fixed
 	display: none
@@ -24,12 +19,16 @@
 	color: #fff
 
 .withBack
-	min-height: 100vh
-	@include background
+	min-height: 620px
+	height: 100vh
+	background-position: 80% 40%
+	background-size: cover
+	color: #fff
 	p
 		max-width: 450px
 		top: 44vh
 		@include center
+		z-index: 10
 		font: 13px/2 OpenSans-Regular
 
 .textPage > div
@@ -46,6 +45,7 @@ h1, h2
 	max-width: 600px
 	top: 44vh
 	@include center
+	z-index: 10
 	font: 60px/1.7 OpenSans-Light
 
 h2
@@ -110,8 +110,8 @@ h5
 		div
 			width: 33.333%
 			height: 280px
-			padding: 40px
-			background-size: cover
+			padding: 30px
+			background-size: cover !important
 			color: #fff
 			transition: background-position 0.3s ease 0s
 			a
@@ -147,7 +147,7 @@ h5
 			&:hover
 				background-position: -560px 280px
 		div:last-child
-			background: #81C99C url("../images/smallBack5.jpg") no-repeat 280px 280px
+			background: #82CB9D url("../images/smallBack5.jpg") no-repeat 280px 280px
 			&:hover
 				background-position: 0 0
 	> div:last-child
@@ -197,7 +197,7 @@ h5
 			a
 				padding: 13px 30px
 				border-radius: 3px
-				background-color: #81C99C
+				background-color: #82CB9D
 				font: 13px/2 OpenSans-Bold
 				color: #fff
 				text-transform: uppercase
@@ -235,6 +235,10 @@ footer
 			span
 				font: 12px/1.5 OpenSans-Regular
 				color: #56687E
+
+i
+	display: none
+
 form
 	width: 100%
 	padding-bottom: 15px
@@ -259,6 +263,7 @@ form
 		position: absolute
 		top: 20px
 		right: 20px
+		cursor: pointer
 
 @mixin noCenter
 	left: 20px

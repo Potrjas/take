@@ -60,7 +60,8 @@ img {
   color: #fff; }
 
 .withBack {
-  min-height: 100vh;
+  min-height: 620px;
+  height: 100vh;
   background-position: 80% 40%;
   background-size: cover;
   color: #fff; }
@@ -69,6 +70,7 @@ img {
     top: 44vh;
     left: 50%;
     margin-left: -600px;
+    z-index: 10;
     font: 13px/2 OpenSans-Regular; }
 
 .textPage > div {
@@ -87,6 +89,7 @@ h1, h2 {
   top: 44vh;
   left: 50%;
   margin-left: -600px;
+  z-index: 10;
   font: 60px/1.7 OpenSans-Light; }
 
 h2 {
@@ -148,8 +151,8 @@ h5 {
   #page2 > div:nth-child(2) div {
     width: 33.333%;
     height: 280px;
-    padding: 40px;
-    background-size: cover;
+    padding: 30px;
+    background-size: cover !important;
     color: #fff;
     transition: background-position 0.3s ease 0s; }
     #page2 > div:nth-child(2) div a {
@@ -185,7 +188,7 @@ h5 {
     #page2 > div:nth-child(2) div:nth-child(4):hover {
       background-position: -560px 280px; }
   #page2 > div:nth-child(2) div:last-child {
-    background: #81C99C url("../images/smallBack5.jpg") no-repeat 280px 280px; }
+    background: #82CB9D url("../images/smallBack5.jpg") no-repeat 280px 280px; }
     #page2 > div:nth-child(2) div:last-child:hover {
       background-position: 0 0; }
   #page2 > div:last-child {
@@ -235,7 +238,7 @@ h5 {
       #page5 > div div a {
         padding: 13px 30px;
         border-radius: 3px;
-        background-color: #81C99C;
+        background-color: #82CB9D;
         font: 13px/2 OpenSans-Bold;
         color: #fff;
         text-transform: uppercase; }
@@ -273,6 +276,9 @@ footer {
         font: 12px/1.5 OpenSans-Regular;
         color: #56687E; }
 
+i {
+  display: none; }
+
 form {
   width: 100%;
   padding-bottom: 15px; }
@@ -296,7 +302,8 @@ form {
   form img {
     position: absolute;
     top: 20px;
-    right: 20px; }
+    right: 20px;
+    cursor: pointer; }
 
 @media only all and (max-width: 1240px) {
   .withBack p, h1, h2, #page1 img, #page3 a {
